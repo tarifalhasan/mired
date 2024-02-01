@@ -7,7 +7,7 @@ import Ecommerce from './Ecommerce';
 
 const DigitalSoluations = () => {
     return (
-        <div className='py-10'>
+        <div className='pt-10'>
             <div className='max-w-[1000px] mx-auto text-center pb-8'>
                 <Heading
                     title="Comprehensive Digital Solutions Tailored to Your Success"

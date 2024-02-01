@@ -1,8 +1,8 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -10,6 +10,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { useMediaQuery } from "react-responsive";
 import AnimatedLink from "../AnimationLink";
 import { Button } from "../ui/button";
+
 const Header = () => {
   const pathName = usePathname();
   const [header, setHeader] = useState(false);
@@ -28,8 +29,16 @@ const Header = () => {
       href: "/about-us",
     },
     {
-      label: "Invest in GoActive",
-      href: "/invest",
+      label: "Services",
+      href: "/services",
+    },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
+    {
+      label: "FAQS",
+      href: "/faqs",
     },
   ];
 
@@ -54,17 +63,17 @@ const Header = () => {
     <header
       className={cn(
         header
-          ? "bg-background   py-4 shadow-md"
+          ? "bg-background py-4 shadow-md"
           : "bg-transparent shadow-none py-5",
-        "fixed w-full    mx-auto z-[999] transition-all duration-300"
+        "sticky top-0 w-full mx-auto z-[999] transition-all duration-300"
       )}
     >
       <div className=" px-4 xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
-        <div className="flex gap-x-6 items-center justify-between">
+        <div className="flex gap-x-6 items-center justify-between w-full">
           <Link href={"/"}>
             <Image
-              src={"/images/Logo.svg"}
-              alt="go-active"
+              src={"/logo.png"}
+              alt="mired"
               width={114}
               height={25}
             />
@@ -80,10 +89,10 @@ const Header = () => {
             {Links.map((link, index) => (
               <li
                 className={cn(
-                  "relative text-base ",
+                  "relative text-black ",
                   pathName === link.href
-                    ? " text-secondary font-bold after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-secondary"
-                    : " text-white font-medium"
+                    ? " text-black uppercase font-medium after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-[#D7E9F8]"
+                    : " text-black font-medium uppercase"
                 )}
                 key={index}
               >
@@ -91,14 +100,19 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <div className="hidden xl:block">
+            <Link href='/contact-us'>
+              <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
+            </Link>
+          </div>
           <div
             className=" xl:cursor-pointer xl:hidden"
             onClick={() => setNav((prev) => !prev)}
           >
             {nav ? (
-              <IoClose className=" w-6 h-6 text-white" />
+              <IoClose className=" w-6 h-6 text-black" />
             ) : (
-              <HiOutlineMenu className=" w-6 h-6 text-white" />
+              <HiOutlineMenu className=" w-6 h-6 text-black" />
             )}
           </div>
         </div>
@@ -117,8 +131,8 @@ const Header = () => {
                 className={cn(
                   "relative xl:hidden  text-base ",
                   pathName === link.href
-                    ? " text-secondary font-bold after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-secondary"
-                    : " text-white font-medium"
+                    ? " text-black font-bold after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-secondary"
+                    : " text-black font-medium"
                 )}
                 key={index}
               >
@@ -126,7 +140,7 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <Button variant={"secondary"}>Coming Soon</Button>
+              <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
             </li>
           </ul>
         )}

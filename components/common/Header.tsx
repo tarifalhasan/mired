@@ -101,7 +101,7 @@ const Header = () => {
             ))}
           </ul>
           <div className="hidden xl:block">
-            <Link href='/contact-us'>
+            <Link href='/contact'>
               <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
             </Link>
           </div>

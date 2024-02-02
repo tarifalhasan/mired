@@ -5,7 +5,7 @@ import Button from '../common/button/Buttton';
 
 const HeroArea = () => {
     return (
-        <div className="bg-[url('/images/home-hero-bg-ball.png')] bg-cover py-32">
+        <div className="bg-[url('/images/home-hero-bg.png')] bg-cover py-32">
             <Container>
                 <div className='max-w-[1000px] mx-auto text-center'>
                     <Heading

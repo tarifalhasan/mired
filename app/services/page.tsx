@@ -2,10 +2,12 @@ import ConsultationBookung from '@/components/common/ConsultationBookung';
 import LetsTalk from '@/components/common/LetsTalk';
 import DisplayServices from '@/components/services/DisplayServices';
 import React from 'react';
+import ServicesHeroArea from './ServicesHeroArea';
 
 const Services = () => {
     return (
         <div>
+            <ServicesHeroArea />
             <ConsultationBookung />
             <DisplayServices />
             <LetsTalk />

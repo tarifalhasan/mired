@@ -29,7 +29,7 @@ const Faqs = () => {
                                     Yes! Our team includes talented content creators who can assist you in developing engaging and optimized content for your website. From copywriting to blog writing, we provide comprehensive content creation services.
                                 </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-1" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
+                            <AccordionItem value="item-2" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
                                 <AccordionTrigger className='hover:no-underline text-md md:text-lg lg:text-[22px] font-medium text-start'>
                                     Can you integrate e-commerce functionality into my website?
                                 </AccordionTrigger>
@@ -37,7 +37,7 @@ const Faqs = () => {
                                     Yes! Our team includes talented content creators who can assist you in developing engaging and optimized content for your website. From copywriting to blog writing, we provide comprehensive content creation services.
                                 </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-1" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
+                            <AccordionItem value="item-3" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
                                 <AccordionTrigger className='hover:no-underline text-md md:text-lg lg:text-[22px] font-medium text-start'>
                                     How long does it take to build a website?
                                 </AccordionTrigger>
@@ -45,7 +45,7 @@ const Faqs = () => {
                                     Yes! Our team includes talented content creators who can assist you in developing engaging and optimized content for your website. From copywriting to blog writing, we provide comprehensive content creation services.
                                 </AccordionContent>
                             </AccordionItem>
-                            <AccordionItem value="item-1" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
+                            <AccordionItem value="item-4" className='px-3 md:px-5 lg:px-10 border-[1px] border-[#CFC9D4]'>
                                 <AccordionTrigger className='hover:no-underline text-md md:text-lg lg:text-[22px] font-medium text-start'>
                                     Can you update and maintain my website after it is launched?
                                 </AccordionTrigger>

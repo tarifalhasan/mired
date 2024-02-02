@@ -15,6 +15,7 @@ const DisplayServices = () => {
                     title="Brand Development & Digital Marketing"
                     description="Your brand is your unique story, and we're here to help you tell it. Our brand development and digital marketing experts work closely..."
                     icon='/images/marketing.png'
+                    link='/digital-marketing'
                 />
                 <ServiceCard
                     title="Courses and Newsletters"

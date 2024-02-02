@@ -18,7 +18,7 @@ const DigitalMarketing = () => {
                         <p className='mt-3 mb-5 text-sm md:text-[15px] lg:text-[16px] leading-7'>
                             Your brand is your unique story, and we are going to help you tell it. Our brand development and digital marketing experts work directly with you to define your brands identity, personality, and voice. We craft tailored digital marketing strategies that cut through the noise, harnessing the power of SEO, social media, content marketing, and more to amplify your brands reach and engage your target audience.
                         </p>
-                        <Link href='' className='flex  items-center font-semibold text-black'>
+                        <Link href='/digital-marketing' className='flex  items-center font-semibold text-black'>
                             <p className='uppercase font-clash text-sm '>Learn more</p>
                             <IoIosArrowRoundForward size={28} />
                         </Link>

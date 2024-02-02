@@ -3,6 +3,7 @@ import ConsultationBookung from "@/components/common/ConsultationBookung";
 import Faqs from "@/components/common/Faqs";
 import LetsTalk from "@/components/common/LetsTalk";
 import HeroArea from "@/components/home/HeroArea";
+import Testimonials from "@/components/home/Testimonials";
 import Trust from "@/components/home/Trust";
 import DigitalSoluations from "@/components/home/digitalSoluations/DigitalSoluations";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroArea />
       <ConsultationBookung />
       <DigitalSoluations />
+      <Testimonials />
       <Trust />
       <BookingConsultation />
       <Faqs />

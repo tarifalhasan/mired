@@ -140,7 +140,9 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
+              <Link href='/contact'>
+                <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
+              </Link>
             </li>
           </ul>
         )}

@@ -6,7 +6,7 @@ const Trust = () => {
     return (
         <div className="bg-[url('/images/tech-bg.png')] h-[600px] bg-center flex justify-center items-center">
             <Container>
-                <div className='max-w-[960px]'>
+                <div className='max-w-[960px] mx-auto'>
                     <Heading
                         title="We use the tech that you trust most."
                         center

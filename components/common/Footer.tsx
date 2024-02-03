@@ -4,19 +4,26 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { Poppins } from 'next/font/google';
+
+
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight : ['400', '500', '600', '700']
+})
 
 const Footer = () => {
     return (
-        <div className='py-12'>
+        <div className={`${poppins.className} py-12`}>
             <Container>
                 <div>
                     <div className='flex justify-between items-center w-full '>
-                        <ul className='flex justify-between gap-4 md:gap-6 items-center text-sm uppercase font-poppins'>
+                        <ul className='w-full lg:w-1/3 flex justify-between gap-3 md:gap-6 items-center text-xs md:text-sm uppercase '>
                             <li>terms of use</li>
                             <li>Privacy policy</li>
                             <li>Pricing Plans</li>
                         </ul>
-                        <Link href={"/"} className='hidden lg:block'>
+                        <Link href={"/"} className=' w-1/3 hidden lg:flex justify-center'>
                             <Image
                                 src={"/logo.png"}
                                 alt="Mired"
@@ -24,7 +31,7 @@ const Footer = () => {
                                 height={25}
                             />
                         </Link>
-                        <Link href='/contact-us' className='hidden lg:block'>
+                        <Link href='/contact-us' className='w-1/2 lg:w-1/3 hidden md:flex justify-end'>
                             <Button className="px-6 py-2 bg-[#420FB0]">CONTACT US</Button>
                         </Link>
                     </div>

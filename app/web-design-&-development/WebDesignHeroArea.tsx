@@ -3,9 +3,8 @@ import Button from '@/components/common/button/Buttton';
 import Heading from '@/components/common/heading/Heading';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
-const MarketingHeroArea = () => {
+const WebDesignHeroArea = () => {
     return (
         <div className='border-b-[3px] border-black pt-20 pb-8'>
             <Container>
@@ -18,7 +17,7 @@ const MarketingHeroArea = () => {
                         </Link>
                     </div>
                     <Heading
-                        title="Brand Development & Digital Marketing"
+                        title="Web design and development"
                         center
                         custom='mb-12 mt-2 uppercase text-[28px] md:text-[55px] lg:text-[68px] font-semibold leading-tight'
                     />
@@ -41,4 +40,4 @@ const MarketingHeroArea = () => {
     );
 };
 
-export default MarketingHeroArea;
+export default WebDesignHeroArea;

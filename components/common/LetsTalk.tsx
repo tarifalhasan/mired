@@ -8,11 +8,11 @@ const LetsTalk = () => {
     return (
         <div className='bg-[#F5E3E9] pt-12 lg:pt-0'>
             <Container>
-                <div className='flex flex-col lg:flex-row gap-4 lg:gap-20 items-center'>
+                <div className='flex flex-col lg:flex-row gap-0 lg:gap-20 items-center'>
                     <div className='w-full lg:w-3/5'>
                         <Heading
                             title='Turn Your Website into a Cash Flow Machine'
-                            custom='uppercase text-[35px] md:text-[55px] lg:text-[58px] font-bold leading-tight'
+                            custom='uppercase text-[28px] sm:text-[40px] md:text-[55px] lg:text-[58px] font-bold leading-tight'
                         />
                         <p className='text-black mt-3'>Lets discuss your goals, challenges, and create a strategy that propels your business forward.
                             Do not miss out on this opportunity to take your digital presence to the next level. </p>

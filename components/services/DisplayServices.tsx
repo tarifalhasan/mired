@@ -10,6 +10,7 @@ const DisplayServices = () => {
                     title="Web Design and Development"
                     description="Your website is the face of your business in the digital world, and we're here to make it unforgettable..."
                     icon='/images/design-icon.png'
+                    link='/web-design-&-development'
                 />
                 <ServiceCard
                     title="Brand Development & Digital Marketing"

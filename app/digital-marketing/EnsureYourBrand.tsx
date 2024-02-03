@@ -1,10 +1,13 @@
 import Container from '@/components/common/Container';
 import Heading from '@/components/common/heading/Heading';
+import { Montserrat } from 'next/font/google';
 import React from 'react';
+
+const montserrat = Montserrat({subsets: ["latin"]})
 
 const EnsureYourBrand = () => {
     return (
-        <div className='my-16'>
+        <div className={`${montserrat.className} py-16`}>
             <Container>
                 <div className='py-10 px-4 md:px-7 border-2 border-black'>
                     <Heading

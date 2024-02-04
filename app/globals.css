@@ -70,7 +70,18 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+
+
+
+.hero-bg {
+  background: rgb(243, 241, 246);
+  background: linear-gradient(49deg, rgba(243, 241, 246, 1) 0%, rgba(240, 223, 233, 1) 98%);
 }

@@ -17,6 +17,9 @@ const config = {
         "2xl": "1400px",
       },
     },
+    backgroundImage: {
+      "home-bg": "url('/images/home-bg.png')",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -53,11 +56,24 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         active_link: "rgba(146, 194, 235, 0.37)",
+        skin: {
+          "blue-800": "#420FB0",
+          "pink-300": "#FF92B2",
+          "yellow-600": "#F7BE08",
+        },
       },
+      fontFamily: {
+        poppins: "var(--poppins)",
+        manrope: "var(--monrope)",
+        montserrat: "var(--montserrat)",
+        clash_display: "var(--clash-display)",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        10: "10px",
       },
       keyframes: {
         "accordion-down": {
@@ -72,6 +88,15 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontSize: {
+        "heading-1": [
+          "4.25rem",
+          {
+            lineHeight: "80px",
+            letterSpacing: "-0.01em",
+          },
+        ],
       },
     },
   },

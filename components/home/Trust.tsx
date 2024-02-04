@@ -1,21 +1,14 @@
-import React from 'react';
-import Container from '../common/Container';
-import Heading from '../common/heading/Heading';
-
 const Trust = () => {
-    return (
-        <div className="bg-[url('/images/tech-bg.png')] h-[600px] bg-center flex justify-center items-center">
-            <Container>
-                <div className='max-w-[960px] mx-auto'>
-                    <Heading
-                        title="We use the tech that you trust most."
-                        center
-                        custom='text-[35px] md:text-[55px] lg:text-[96px] font-semibold leading-none'
-                    />
-                </div>
-            </Container>
-        </div>
-    );
+  return (
+    <div className="bg-[url('/images/technology.png')]   min-h-[40vh] sm:min-h-[60vh] xl:min-h-[784px] bg-center flex justify-center bg-cover bg-no-repeat items-center">
+      <div className=" container max-w-[1001px] mx-auto">
+        <h2 className="heading-1 text-center">
+          We use the tech that <br className=" hidden xl:block" /> you trust
+          most.
+        </h2>
+      </div>
+    </div>
+  );
 };
 
 export default Trust;

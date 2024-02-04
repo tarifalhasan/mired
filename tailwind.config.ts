@@ -62,6 +62,8 @@ const config = {
           "pink-200": "#F5E3E9",
           "yellow-600": "#F7BE08",
           "yellow-200": "#F5EFD9",
+          "pink-50": "#F4F2F6",
+          "slate-800": "#080F22",
         },
       },
       fontFamily: {

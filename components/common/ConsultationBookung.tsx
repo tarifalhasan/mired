@@ -1,46 +1,54 @@
-import React from 'react';
-import Container from './Container';
-import Image from 'next/image';
-import Heading from './heading/Heading';
-import Button from './button/Buttton';
+import Image from "next/image";
+import CustomButton from "../ui/custom-button";
 
 const ConsultationBookung = () => {
-    return (
-        <div className='py-20'>
-            <Container>
-                <div className='flex flex-col lg:flex-row gap-12 lg:gap-20 items-center'>
-                    <div className='w-full lg:w-2/5'>
-                        <Image
-                            src='/images/two-lady.png'
-                            alt='Handsome guy'
-                            width={400}
-                            height={600}
-                            className='w-full'
-                        />
-                    </div>
-
-                    <div className='w-full lg:w-3/5'>
-                        <Heading
-                            title='Your Website Can Work  Harder For You'
-                            custom='uppercase text-[35px] md:text-[55px] lg:text-[58px] font-bold leading-tight'
-                        />
-                        <p className='text-black mt-3'>
-                            Imagine a website that not only beautifully showcases your brand, but also seamlessly integrates a diverse range of revenue-generating elements. <span className='font-bold'>At mired, we bring that vision to life.</span>
-                                <br /> <br />
-                            Our website building services incorporate revenue-generating elements such as engaging online courses, informative newsletters, and engaging blogs, as well as an e-commerce platform.
-                            Your digital platform can - and should - work harder for you.
-                        </p>
-
-                        <div className='mt-10 lg:mt-16' >
-                            <Button
-                                label="Book Your Consultation Today"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </Container>
+  return (
+    <div className=" py-12 sm:py-20">
+      <div className="flex container flex-col lg:flex-row gap-12 lg:gap-20 items-center">
+        <div className="w-full  lg:max-w-[520px]">
+          <Image
+            src="/images/tow-girl.png"
+            alt="Handsome guy"
+            width={520}
+            height={680}
+            className="w-full object-cover"
+            quality={80}
+          />
         </div>
-    );
+
+        <div className="w-full space-y-5 xl:space-y-7  flex-1">
+          <div>
+            <h2 className="heading-1 uppercase">Your Website</h2>
+            <h2 className="heading-1 uppercase">Can Work Harder</h2>
+            <h2 className="heading-1 uppercase">For You</h2>
+          </div>
+          <div>
+            <div>
+              <p>
+                Imagine a website that not only beautifully showcases your
+                brand, but also seamlessly integrates a diverse range of
+                revenue-generating elements. 
+                <b>At mired, we bring that vision to life.</b>
+              </p>
+            </div>
+            <div className=" pt-10">
+              <p>
+                Our website building services incorporate revenue-generating
+                elements such as engaging online courses, informative
+                newsletters, and engaging blogs, as well as an e-commerce
+                platform.
+                <br />
+                Your digital platform can - and should - work harder for you. 
+              </p>
+            </div>
+          </div>
+          <div className="pt-4">
+            <CustomButton>Book Your Consultation Today</CustomButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ConsultationBookung;

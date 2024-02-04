@@ -74,14 +74,22 @@
   body {
     @apply bg-background text-foreground;
   }
+  p {
+    @apply text-sm sm:text-base font-manrope  font-normal;
+  }
+  h2 {
+    @apply font-clash_display text-2xl sm:text-5xl lg:text-6xl font-bold 2xl:text-heading-1 uppercase;
+  }
+  h3 {
+    @apply font-clash_display text-xl sm:text-2xl lg:text-3xl font-bold 2xl:text-heading-2 uppercase;
+  }
 }
 
-
-
-
-
-
-.hero-bg {
-  background: rgb(243, 241, 246);
-  background: linear-gradient(49deg, rgba(243, 241, 246, 1) 0%, rgba(240, 223, 233, 1) 98%);
+@layer components {
+  .heading-1 {
+    @apply font-clash_display text-2xl sm:text-5xl lg:text-6xl font-bold 2xl:text-heading-1 uppercase;
+  }
+  .heading-2 {
+    @apply font-clash_display text-xl sm:text-2xl lg:text-3xl font-bold 2xl:text-heading-2 uppercase;
+  }
 }

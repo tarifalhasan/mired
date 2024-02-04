@@ -59,7 +59,9 @@ const config = {
         skin: {
           "blue-800": "#420FB0",
           "pink-300": "#FF92B2",
+          "pink-200": "#F5E3E9",
           "yellow-600": "#F7BE08",
+          "yellow-200": "#F5EFD9",
         },
       },
       fontFamily: {
@@ -67,6 +69,7 @@ const config = {
         manrope: "var(--monrope)",
         montserrat: "var(--montserrat)",
         clash_display: "var(--clash-display)",
+        orbitron: "var(--orbitron)",
       },
 
       borderRadius: {
@@ -94,6 +97,13 @@ const config = {
           "4.25rem",
           {
             lineHeight: "80px",
+            letterSpacing: "-0.01em",
+          },
+        ],
+        "heading-2": [
+          "2.375rem",
+          {
+            lineHeight: "50px",
             letterSpacing: "-0.01em",
           },
         ],

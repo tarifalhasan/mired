@@ -28,8 +28,16 @@ const Header = () => {
       href: "/about-us",
     },
     {
-      label: "Invest in GoActive",
-      href: "/invest",
+      label: "services",
+      href: "/services",
+    },
+    {
+      label: "projects",
+      href: "/projects",
+    },
+    {
+      label: "FAQ's",
+      href: "/faqs",
     },
   ];
 
@@ -63,45 +71,51 @@ const Header = () => {
         <div className="flex gap-x-6 items-center justify-between">
           <Link href={"/"}>
             <Image
-              src={"/images/Logo.svg"}
+              src={"/images/logo.png"}
               alt="go-active"
-              width={114}
-              height={25}
+              width={150}
+              height={48}
+              quality={80}
             />
           </Link>
-          <ul
-            className={cn(
-              nav
-                ? " py-8 xl:py-0  xl:px-0"
-                : "max-h-0 xl:max-h-max w-full bg-background",
-              "  hidden xl:flex flex-col items-center w-full bg-background  xl:flex-row xl:w-max xl:gap-x-8 gap-y-5"
-            )}
-          >
-            {Links.map((link, index) => (
-              <li
-                className={cn(
-                  "relative text-base ",
-                  pathName === link.href
-                    ? " text-secondary font-bold after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-secondary"
-                    : " text-white font-medium"
-                )}
-                key={index}
-              >
-                <AnimatedLink href={link.href}>{link.label}</AnimatedLink>
-              </li>
-            ))}
-          </ul>
+
           <div
             className=" xl:cursor-pointer xl:hidden"
             onClick={() => setNav((prev) => !prev)}
           >
             {nav ? (
-              <IoClose className=" w-6 h-6 text-white" />
+              <IoClose className=" cursor-pointer w-6 h-6 black" />
             ) : (
-              <HiOutlineMenu className=" w-6 h-6 text-white" />
+              <HiOutlineMenu className=" cursor-pointer w-6 h-6 black" />
             )}
           </div>
         </div>
+        <ul
+          className={cn(
+            nav
+              ? " py-8 xl:py-0  xl:px-0"
+              : "max-h-0 xl:max-h-max w-full bg-background",
+            "  hidden xl:flex flex-col items-center w-full bg-background  xl:flex-row xl:w-max xl:gap-x-8 gap-y-5"
+          )}
+        >
+          {Links.map((link, index) => (
+            <li
+              className={cn(
+                "relative text-sm rounded-[3px] uppercase px-2   h-6 flex items-center justify-center font-normal ",
+                pathName === link.href ? "   bg-active_link" : "   "
+              )}
+              key={index}
+            >
+              <AnimatedLink href={link.href}>{link.label}</AnimatedLink>
+            </li>
+          ))}
+        </ul>
+        <Button
+          className=" active:bg-blue-500/70 hidden xl:block"
+          variant={"secondary"}
+        >
+          Coming Soon
+        </Button>
         {nav && (
           <ul
             className={cn(
@@ -115,10 +129,8 @@ const Header = () => {
               <li
                 onClick={() => setNav(false)}
                 className={cn(
-                  "relative xl:hidden  text-base ",
-                  pathName === link.href
-                    ? " text-secondary font-bold after:left-0 after:-bottom-[8px] after:absolute after:w-full after:h-[2px] after:bg-secondary"
-                    : " text-white font-medium"
+                  "relative text-sm rounded-[3px] uppercase px-2   h-6 flex items-center justify-center font-normal ",
+                  pathName === link.href ? "   bg-active_link" : "   "
                 )}
                 key={index}
               >

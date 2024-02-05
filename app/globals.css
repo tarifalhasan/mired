@@ -83,6 +83,9 @@
   h3 {
     @apply font-clash_display text-xl sm:text-2xl lg:text-3xl font-bold 2xl:text-heading-2 uppercase;
   }
+  h4 {
+    @apply font-clash_display text-lg sm:text-xl lg:text-2xl font-bold  uppercase;
+  }
 }
 
 @layer components {

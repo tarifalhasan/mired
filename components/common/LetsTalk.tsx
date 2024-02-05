@@ -4,7 +4,7 @@ import CustomButton from "../ui/custom-button";
 const LetsTalk = () => {
   return (
     <div className=" relative overflow-hidden z-50 bg-skin-pink-200 pt-12 lg:pt-0">
-      <div className="flex container min-h-screen flex-col lg:flex-row gap-0 lg:gap-20 items-center">
+      <div className="flex container min-h-[100px] lg:min-h-[800px] flex-col justify-between lg:flex-row gap-0 lg:gap-20 items-center">
         <div className="w-full lg:w-3/5">
           <h2 className=" heading-1">
             Turn Your Website into a Cash Flow Machine

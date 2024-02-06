@@ -6,7 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import React from "react";
+import { cn } from "@/lib/utils";
+import React, { FC } from "react";
 
 const faqData = [
   {
@@ -35,16 +36,18 @@ const faqData = [
   },
 ];
 
-const Faqs = () => {
-  const [openIndex, setOpenIndex] = React.useState("item-1"); // Set the default open index
-
+interface Props {
+  className?: string;
+}
+const Faqs: FC<Props> = ({ className }) => {
+  const [openIndex, setOpenIndex] = React.useState("item-1");
   console.log(openIndex);
   const handleAccordionChange = (v: string) => {
     setOpenIndex(v);
   };
 
   return (
-    <div className="py-20 bg-[#F4F2F6]">
+    <div className={cn(className, "py-20   bg-skin-pink-50")}>
       <div className="container">
         <h2 className="heading-2">Frequently Asked Questions</h2>
 

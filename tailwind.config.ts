@@ -19,11 +19,12 @@ const config = {
     },
     backgroundImage: {
       "home-bg": "url('/images/home-bg.png')",
+      "s-bg": "url('/images/contact_bg.png')",
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
+        border: "#CFC9D4",
+        input: "#CFC9D4",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

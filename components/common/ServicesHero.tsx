@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Button } from "../ui/button";
 
-const ServicesHeroArea = () => {
+const ServicesHero = () => {
   return (
     <div
       className=" bg-s-bg bg-pink-50    bg-no-repeat bg-center w-full flex  flex-col justify-center items-center relative overflow-hidden min-h-[460px] xl:min-h-[520px]"
@@ -11,12 +11,13 @@ const ServicesHeroArea = () => {
     >
       <div className=" container h-full z-20 relative ">
         <div className="max-w-[1030px] relative z-40 space-y-6 xl:space-y-5 mx-auto text-center">
-          <h2 className="heading-1">services</h2>
+          <h2 className="heading-1">contact</h2>
           <p className="">
             We optimize your online presence, turning it into a revenue
             powerhouse that effectively markets and sells your digital{" "}
-            <br className=" xl:block hidden" /> offerings. With our all-in-one
-            solutions your website does more than exist—it excels.
+            <br className=" xl:block hidden" />
+            offerings. With our all-in-one solutions your website does more than
+            exist—it excels.
           </p>
           <div className="flex gap-6 justify-center items-center">
             <Button
@@ -62,4 +63,4 @@ const ServicesHeroArea = () => {
   );
 };
 
-export default ServicesHeroArea;
+export default ServicesHero;

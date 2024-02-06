@@ -1,7 +1,10 @@
 const HeroArea = () => {
   return (
     <div
-      className={`  bg-[#F4F2F6] lg:bg-home-bg h-screen  flex items-center justify-center relative overflow-hidden  bg-cover `}
+      className={`  bg-[#F4F2F6] lg:bg-home-bg h-screen  flex items-center justify-center relative overflow-hidden `}
+      style={{
+        backgroundSize: "100% 100%",
+      }}
     >
       <div className=" container relative  z-50 text-center mx-auto max-w-[66.875rem]  space-y-5 xl:space-y-7">
         <div>

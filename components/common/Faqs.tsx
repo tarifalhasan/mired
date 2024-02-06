@@ -41,7 +41,7 @@ interface Props {
 }
 const Faqs: FC<Props> = ({ className }) => {
   const [openIndex, setOpenIndex] = React.useState("item-1");
-  console.log(openIndex);
+
   const handleAccordionChange = (v: string) => {
     setOpenIndex(v);
   };

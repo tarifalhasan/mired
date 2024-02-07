@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SocialMedia = () => {
   return (
-    <div>
+    <>
       <div className="px-4 lg:max-h-[477px] lg:px-10 py-8 md:py-12 rounded-lg border border-black flex  flex-col-reverse bg-white md:flex-row justify-between items-center gap-12 lg:gap-28">
         <div className="w-full md:w-/12">
           <h3>Social media </h3>
@@ -25,7 +25,7 @@ const SocialMedia = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

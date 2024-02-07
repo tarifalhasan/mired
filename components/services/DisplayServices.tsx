@@ -22,12 +22,14 @@ const DisplayServices = () => {
         description="Share your expertise and create valuable learning experiences with our customized course development services..."
         icon="/images/course-icon.png"
         backgroundColor="#F5EFD9"
+        link=""
       />
       <ServiceCard
         title="E-commerce Solutions"
         description="Seamlessly sell your products or services online with our tailored ecommerce solutions. We create user-friendly online stores that offer..."
         icon="/images/cart.png"
         backgroundColor="#F5E3E9"
+        link=""
       />
     </div>
   );

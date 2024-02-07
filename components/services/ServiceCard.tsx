@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 interface ServiceCardProps {
   title: string;
   description: string;
   icon: string;
-  link?: string;
+  link: string;
   backgroundColor: string;
 }
 
@@ -17,7 +18,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   backgroundColor,
 }) => {
   return (
-    <div
+    <Link
+      href={link}
       style={{
         backgroundColor: `${backgroundColor}`,
       }}
@@ -36,7 +38,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           learn more
         </Button>
       </div>
-    </div>
+    </Link>
   );
 };
 

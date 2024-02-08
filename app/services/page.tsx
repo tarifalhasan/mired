@@ -8,7 +8,9 @@ const Services = () => {
   return (
     <div>
       <ServicesHeroArea />
-      <Sponsars />
+      <div className=" py-6">
+        <Sponsars />
+      </div>
       <ConsultationBookung />
       <DisplayServices />
       <LetsTalk />

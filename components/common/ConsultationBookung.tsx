@@ -3,7 +3,13 @@ import CustomButton from "../ui/custom-button";
 
 const ConsultationBookung = () => {
   return (
-    <div className=" py-12 sm:py-20">
+    <div
+      className=" py-12 sm:py-20"
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,247,246,1) 55%)",
+      }}
+    >
       <div className="flex container flex-col lg:flex-row gap-12 lg:gap-20 items-center">
         <div className="w-full  lg:max-w-[520px]">
           <Image

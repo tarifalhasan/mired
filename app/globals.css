@@ -96,3 +96,20 @@
     @apply font-clash_display text-xl sm:text-2xl lg:text-3xl font-bold 2xl:text-heading-2 uppercase;
   }
 }
+
+/* LogoSlider.css */
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}

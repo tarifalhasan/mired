@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <div className=" relative z-50">
       <ServicesHero />
-      <Sponsars />
+      <div className=" py-5">
+        <Sponsars />
+      </div>
       <ContactForm />
       <Faqs className=" !bg-white" />
       <LetsTalk className="" />

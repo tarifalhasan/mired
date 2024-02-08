@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const HeroArea = () => {
   return (
     <div
-      className={`  bg-[#F4F2F6] lg:bg-home-bg h-screen  flex items-center justify-center relative overflow-hidden `}
+      className={`  bg-[#F4F2F6] bg-home-bg h-[calc(100vh-80px)] sm:h-[calc(100vh-90px)]  flex items-center justify-center relative overflow-hidden `}
       style={{
         backgroundSize: "100% 100%",
       }}
@@ -24,8 +26,20 @@ const HeroArea = () => {
         </button>
       </div>
 
-      <div className=" z-10 absolute  bottom-[-50%] left-[-20%] w-[150px] h-[150px] lg:w-[674px] lg:h-[674px] rounded-full  bg-pink-600 blur-[300px] opacity-100" />
-      <div className=" z-10 absolute  top-[-40%] right-[-30%] w-[150px] h-[150px] lg:w-[674px] lg:h-[674px] rounded-full  bg-pink-600 blur-[300px] opacity-100" />
+      <Image
+        src={"/images/hero_g1.svg"}
+        alt="hero_g"
+        width={674}
+        className=" absolute top-0 z-10  right-0"
+        height={674}
+      />
+      <Image
+        src={"/images/hero_g2.svg"}
+        alt="hero_g"
+        width={674}
+        className=" absolute bottom-0 z-10  left-0"
+        height={674}
+      />
     </div>
   );
 };

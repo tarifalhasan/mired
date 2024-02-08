@@ -1,6 +1,6 @@
 const DesignDevelopment = () => {
   return (
-    <div className={`$ py-16`}>
+    <div className={`$ py-16 bg-white`}>
       <div className="container grid lg:grid-cols-2 gap-10">
         <div className="border-2 border-black rounded-[20px] pt-8 md:pt-14 pb-6 px-4 md:px-8">
           <div

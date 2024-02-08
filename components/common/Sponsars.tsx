@@ -38,8 +38,7 @@ const Sponsars = () => {
           {logos.map((logo, index) => (
             <div key={index} className=" mx-5 inline-flex items-center gap-2">
               <svg
-                width="78"
-                height="80"
+                className=" w-7 h-7 sm:w-14 sm:h-14  lg:w-20 lg:h-20"
                 viewBox="0 0 78 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
